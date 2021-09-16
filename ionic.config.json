@@ -1,0 +1,7 @@
+{
+  "name": "tinder-fire",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
