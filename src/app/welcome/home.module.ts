@@ -1,10 +1,10 @@
+import { WelcomeComponent } from './welcome/welcome.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { WelcomePageRoutingModule } from './welcome-routing.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
@@ -13,8 +13,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    WelcomePageRoutingModule,
   ],
-  declarations: [HomePage]
+  declarations: [WelcomeComponent]
 })
 export class HomePageModule {}

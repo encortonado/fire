@@ -1,20 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <ion-icon style="color: red; margin-top: 8%;" name="flame"></ion-icon> <span style="margin-bottom: 5%;"> Indique um Incendio </span>
+        <ion-fab   vertical="top" horizontal="end" slot="fixed">
+          <button style="border-radius: 50%; width: 25px; height: 25px;" (click)="presentAlertConfirm()">
+            <ion-icon name="information"></ion-icon>
+          </button>
+        </ion-fab>
+      </p>
+
     </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <div #map id="map"></div>
 </ion-content>
+

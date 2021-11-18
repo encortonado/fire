@@ -1,3 +1,4 @@
+import { WelcomeComponent } from './welcome/welcome/welcome.component';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -7,7 +8,16 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'welcome',
+    loadChildren: () => import('./welcome/welcome-routing.module').then( m => m.WelcomePageRoutingModule)
+  },
+  {
     path: '',
+    redirectTo: 'welcome',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
     redirectTo: 'home',
     pathMatch: 'full'
   },
